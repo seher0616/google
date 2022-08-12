@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    /* position: relative; */
+    font-family: Arial, sans-serif;
+    /* white-space: nowrap; */
+}
+.header{
+    /* border: 1px solid red; */
+    padding: 1px; /* CSS hatası header kısmına bir boyut verilmediği için sayfa oradaki etiketleri okuyamıyor bu yüzden body e eklediğimiz img etiketine margin değerini verdiğimizde header etiketiyle birlikte uygulayıp kaydırıyor.
+    Eğer header a bizim verdiğimiz gibi padding margin ya da border değerleri verilmediğinde aşağıdaki yöntem uygulanır.
+    html de header etiketleri arasına bir boş div açılır ve 
+    css style olarak "clear: both;" uygulanır.*/
+}
+.left{
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.right{
+    float: right;
+    margin: 10px 0 0 15px;
+}
+.left a{
+    color: #5f6368;
+    margin-left: 15px;
+}
+.right a , button{
+    color: black;
+    margin-right: 15px;
+}
+.right a:hover , 
+.left a:hover{
+    border-bottom: 1px solid black;
+}
+#appicon{
+    vertical-align: middle;
+    opacity: 0.5;
+}
+#appicon:hover{
+    opacity: 1.0;
+}
+.right button{
+    background-color:#4285f4 ;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 70px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.clear{
+    /* clear: both; */
+}
+#google{
+    display: block;
+    /* position: absolute;
+    left: 630px;
+    top: 250px; */
+    height: 95px;
+    width: 272px;
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.searchbar{
+    padding-top: 20px;
+    margin-left: 60px;
+    text-align: center;
+}
+#search{
+    font-size: 16px;
+    height: 45px ;
+    width: 500px;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    padding: 3px;
+    padding-left: 50px ;
+}
+#search:hover{
+    box-shadow: 3px 3px 5px lightgray;
+}
+#search:focus{
+    outline: 2rem;
+}
+input{
+    width: 200px;
+}
+#scope{
+    position: relative;
+    right: 480px;
+    top: 5px;
+    opacity: 0.5;
+}
+#mic{
+    position: relative;
+    right: 55px;
+    top: 5px;
+    height: 20px; 
+}
+.buttons{
+    text-align: center;
+    padding: 30px;
+}
+.btn{
+    border: hidden;
+    height: 36px;
+    width: 120px;
+    color: #5f6368;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* cursor: pointer; */
+}
+.btn:hover{
+    color: black;
+    border: 1px solid lightgray;
+    box-shadow: 0.7px 0.7px 0.7px lightgray;
+    cursor: pointer;
+}
+#paragraf{
+    font-size: small ;
+}
+​
+.footer{
+    width: 100%;
+    /* padding-left: 0px; */
+    background-color: #f2f2f2;
+    line-height: 40px;
+    font-size: 14px;
+    /* border-top: 1px solid #e4e4e4; */
+    position: fixed;
+    bottom: 0;
+    
+}
+.footer a{
+    color: #5f6368;
+}
+.footer p{
+    border-bottom: 1px solid #e4e4e4;
+    margin-left: 23px;
+    color: gray;
+}
